@@ -2,3 +2,7 @@ Import pandas as pd
 df = pd.read_csv ('training_records_good_rats.csv') 
 print ("Original Dataset:")
 print (df)
+row_index = 'date'
+date_df = df.set_index(row_index)
+date_df
+date_df.describe()
